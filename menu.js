@@ -25,12 +25,13 @@ window.MENU = [
     label: "Buffet libero",
     kicker: "Perché il capitalismo ha dei limiti",
     items: [
-      { name: "Mini empanadas", description: "Finché ce n'è.", price: 0 },
+      { name: "Mini Causas", description: "Un omaggio all’anima peruviana di Martin, in formato buffet.", price: 0 },
+      { name: "Mini empanadas", description: "Perché l’anima peruviana di Martin non poteva fermarsi alle causas.", price: 0 },
       { name: "Pizza & pizzette", description: "Il pilastro costituzionale di ogni buffet.", price: 0 },
-      { name: "Mini Causa", description: "Piccole, pericolosamente facili da far sparire.", price: 0 },
       { name: "Panini al latte ripieni", description: "Morbidi, ripieni e senza conseguenze economiche.", price: 0 },
-      { name: "Cous cous", description: "Vegetariano e preparato per prevenire il collasso.", price: 0 },
+      { name: "Cous cous", description: "Preparato per prevenire il collasso.", price: 0 },
       { name: "Torte salate", description: "Due varietà. Il mercato non decide tutto.", price: 0 },
+      { name: "Riso freddo / pasta fredda", description: "A seconda di come ci gira il giorno prima. Pianificazione strategica.", price: 0 },
       { name: "Snack", description: "Capitale circolante.", price: 0 }
     ]
   },
