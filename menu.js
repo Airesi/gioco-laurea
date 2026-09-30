@@ -11,6 +11,7 @@ window.MENU = [
     kicker: "Investimenti ad alto rischio",
     items: [
       { name: "Acqua", description: "Sorprendentemente gratis.", price: 0 },
+      { name: "Coca-Cola & analcolici", description: "Gratis. La Banca incoraggia almeno alcune decisioni responsabili.", price: 0 },
       { name: "Birra", description: "Economicamente sostenibile. Almeno questa.", price: 5 },
       { name: "Shottino", description: "Piccolo investimento. Conseguenze potenzialmente sproporzionate.", price: 10 },
       { name: "Spritz", description: "Il classico. Una scelta quasi responsabile.", price: 20 },
