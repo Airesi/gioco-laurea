@@ -15,8 +15,8 @@ window.MENU = [
       { name: "Birra", description: "Economicamente sostenibile. Almeno questa.", price: 5 },
       { name: "Shottino", description: "Piccolo investimento. Conseguenze potenzialmente sproporzionate.", price: 10 },
       { name: "Spritz", description: "Il classico. Una scelta quasi responsabile.", price: 20 },
-      { name: "Gin Tonic", description: "La tonica è solo una misura di contenimento del rischio.", price: 30 },
       { name: "Cuba Libre", description: "Due ingredienti. Già più pianificazione del previsto.", price: 30 },
+      { name: "Gin Tonic", description: "La tonica è solo una misura di contenimento del rischio.", price: 30 },
       { name: "Caipirinha", description: "Cachaça, lime, zucchero. Deliberatamente costosa.", note: "Disponibile solo dalle 19:00 alle 20:00.", price: 50, premium: true, badge: "SCELTA FINANZIARIAMENTE IRRESPONSABILE" }
     ]
   },
