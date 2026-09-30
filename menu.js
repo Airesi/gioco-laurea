@@ -40,7 +40,7 @@ window.MENU = [
     label: "Extra",
     kicker: "Il lusso ha un prezzo",
     items: [
-      { name: "Kebab on demand", description: "Un kebab vero. Te lo ordiniamo noi. Se ne vuoi più di uno, organizzati.", price: 100, premium: true, badge: "OPERAZIONE STRAORDINARIA" }
+      { name: "Kebab on demand", description: "Raggiunti i 300 E¢, parte un unico ordine per tutti gli affamati coinvolti. Coalizzarsi è consentito e fiscalmente consigliato.", price: 300, premium: true, badge: "OPERAZIONE STRAORDINARIA" }
     ]
   }
 ];
