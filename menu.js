@@ -7,7 +7,7 @@
 window.MENU = [
   {
     id: "cocktail",
-    label: "Cocktail",
+    label: "Bevande",
     kicker: "Investimenti ad alto rischio",
     items: [
       { name: "Acqua", description: "Sorprendentemente gratis.", price: 0 },
@@ -40,7 +40,7 @@ window.MENU = [
     label: "Extra",
     kicker: "Il lusso ha un prezzo",
     items: [
-      { name: "Kebab on demand", description: "Un kebab vero. Ordinato appositamente per te.", price: 100, premium: true, badge: "OPERAZIONE STRAORDINARIA" }
+      { name: "Kebab on demand", description: "Un kebab vero. Te lo ordiniamo noi. Se ne vuoi più di uno, organizzati.", price: 100, premium: true, badge: "OPERAZIONE STRAORDINARIA" }
     ]
   }
 ];
