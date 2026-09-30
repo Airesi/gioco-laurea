@@ -10,6 +10,7 @@ window.MENU = [
     label: "Cocktail",
     kicker: "Investimenti ad alto rischio",
     items: [
+      { name: "Birra", description: "Economicamente sostenibile. Almeno questa.", price: 5 },
       { name: "Spritz", description: "Il classico. Una scelta quasi responsabile.", price: 20 },
       { name: "Gin Tonic", description: "Gin, tonica e un ottimismo non supportato dai fatti.", price: 30 },
       { name: "Cuba Libre", description: "Rum, Coca-Cola e libertà finanziaria temporanea.", price: 30 },
