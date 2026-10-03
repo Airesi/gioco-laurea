@@ -8,3 +8,14 @@
 .bank-rules h2 strong{color:var(--wine)}
 .bank-rules>p:not(.bank-kicker):not(.debt-warning){margin:0;color:var(--muted);font-size:14px;line-height:1.55}
 .debt-warning{margin:14px 0 0;padding-top:11px;border-top:1px solid #d8cdbd;color:var(--wine);font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+
+.countdown{max-width:560px;margin:24px auto 0;padding:17px 16px 14px;border:1px solid var(--gold);background:rgba(247,240,226,.035)}
+.countdown-kicker{margin:0 0 12px;color:var(--gold);font:700 9px Arial,sans-serif;letter-spacing:.16em}
+.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.countdown-grid>div{padding:10px 4px 8px;border:1px solid rgba(184,147,121,.42);background:rgba(255,250,240,.04)}
+.countdown-grid strong{display:block;color:var(--cream);font-size:clamp(24px,7vw,38px);line-height:1;font-variant-numeric:tabular-nums}
+.countdown-grid span{display:block;margin-top:6px;color:var(--gold);font:700 8px Arial,sans-serif;letter-spacing:.12em}
+.countdown-note{margin:12px 0 0;color:#d8cdbd;font-style:italic;font-size:13px}
+.countdown.started .countdown-grid{display:none}
+.countdown.started .countdown-note{margin:4px 0 0;color:var(--cream);font-size:20px;font-weight:700;font-style:normal}
+@media(max-width:420px){.countdown{padding-left:10px;padding-right:10px}.countdown-grid{gap:4px}.countdown-grid span{font-size:7px;letter-spacing:.06em}}
