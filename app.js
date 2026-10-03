@@ -10,3 +10,35 @@
     tabs.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.id;render()}));
   } render();
 })();
+
+// Conto alla rovescia — apertura della festa, 4 ottobre 2026 ore 17:00 (Milano)
+(() => {
+  const target = new Date("2026-10-04T17:00:00+02:00").getTime();
+  const box = document.querySelector(".countdown");
+  const note = document.getElementById("countdown-note");
+  if (!box || !note) return;
+
+  const els = {
+    days: document.getElementById("cd-days"),
+    hours: document.getElementById("cd-hours"),
+    minutes: document.getElementById("cd-minutes"),
+    seconds: document.getElementById("cd-seconds")
+  };
+  const pad = n => String(n).padStart(2, "0");
+
+  function tick() {
+    const left = target - Date.now();
+    if (left <= 0) {
+      box.classList.add("started");
+      note.textContent = "I MERCATI SONO APERTI. INVESTITE MALE.";
+      return;
+    }
+    const totalSeconds = Math.floor(left / 1000);
+    els.days.textContent = pad(Math.floor(totalSeconds / 86400));
+    els.hours.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
+    els.minutes.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+    els.seconds.textContent = pad(totalSeconds % 60);
+    setTimeout(tick, 250);
+  }
+  tick();
+})();
