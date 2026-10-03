@@ -13,17 +13,16 @@
 
 // Conto alla rovescia — apertura della festa, 4 ottobre 2026 ore 17:00 (Milano)
 (() => {
-  const target = new Date("2026-10-04T17:00:00+02:00").getTime();
   const box = document.querySelector(".countdown");
   const note = document.getElementById("countdown-note");
-  if (!box || !note) return;
+  const hoursEl = document.getElementById("cd-hours");
+  const minutesEl = document.getElementById("cd-minutes");
+  const secondsEl = document.getElementById("cd-seconds");
+  if (!box || !note || !hoursEl || !minutesEl || !secondsEl) return;
 
-  const els = {
-    days: document.getElementById("cd-days"),
-    hours: document.getElementById("cd-hours"),
-    minutes: document.getElementById("cd-minutes"),
-    seconds: document.getElementById("cd-seconds")
-  };
+  // Costruiamo il timestamp esplicitamente: 17:00 a Milano il 4/10/2026 = 15:00 UTC.
+  // Così il timer non dipende dal parsing della data o dal fuso del telefono.
+  const target = Date.UTC(2026, 9, 4, 15, 0, 0);
   const pad = n => String(n).padStart(2, "0");
 
   function tick() {
@@ -34,11 +33,12 @@
       return;
     }
     const totalSeconds = Math.floor(left / 1000);
-    els.days.textContent = pad(Math.floor(totalSeconds / 86400));
-    els.hours.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
-    els.minutes.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
-    els.seconds.textContent = pad(totalSeconds % 60);
-    setTimeout(tick, 250);
+    const totalHours = Math.floor(totalSeconds / 3600);
+    hoursEl.textContent = pad(totalHours);
+    minutesEl.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+    secondsEl.textContent = pad(totalSeconds % 60);
   }
+
   tick();
+  window.setInterval(tick, 1000);
 })();
