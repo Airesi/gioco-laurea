@@ -24,3 +24,11 @@
 .countdown.started .countdown-grid,.countdown.started .countdown-divider{display:none}
 .countdown.started .countdown-note{margin:18px 0 5px;color:var(--cream);font-size:19px;font-weight:700;font-style:normal;letter-spacing:.02em}
 @media(max-width:420px){.countdown{padding-left:12px;padding-right:12px}.countdown-topline{margin-left:-12px;margin-right:-12px;padding-left:12px;padding-right:12px}.countdown-grid i{font-size:26px}.countdown-topline{letter-spacing:.08em}}
+
+.tabs .presentation-tab{position:relative}
+.tabs .presentation-tab:after{content:"ORA";position:absolute;right:-2px;top:-7px;background:var(--gold);color:var(--ink);font:700 7px Arial,sans-serif;padding:2px 4px;border-radius:8px;letter-spacing:.05em}
+.presentation-launch{background:var(--paper);border:1px solid var(--gold);border-top:4px solid var(--wine);padding:18px 16px;box-shadow:0 8px 22px rgba(23,18,16,.08)}
+.presentation-launch .kicker{margin:0;color:var(--wine);font:700 9px Arial,sans-serif;letter-spacing:.18em}
+.presentation-launch h2{margin:5px 0 4px;font-size:30px}
+.presentation-launch p{margin:0 0 16px;color:var(--muted);font-size:14px;font-style:italic}
+.presentation-launch a{display:block;text-align:center;text-decoration:none;background:var(--wine);color:#fff;border:1px solid var(--wine);padding:13px 14px;font:700 10px Arial,sans-serif;letter-spacing:.12em}
